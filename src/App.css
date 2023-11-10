@@ -1,0 +1,154 @@
+:root{
+  --main-color : #ffffff;
+}
+
+.banner , .gallery , .contact{
+  min-height: 100vh;
+  color: var(--main-color);
+}
+
+.container{
+  padding:0 35px;
+  background-image: url(./image/beau-marche-occasion.jpg);
+  background-size: cover;
+  filter: brightness(60%);
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  text-transform: capitalize;
+  background-color: rgba(0 0 0 /60%);
+  border-radius: 0 0 10px 10px;
+}
+
+.header h2{
+  transition: .5s ease;
+}
+
+.header .logo{
+  color: var(--main-color);
+}
+
+.header h2:hover{
+  color: var(--main-color);
+}
+
+.nav{
+  color: #fff;
+  width: 333px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  z-index: 5;
+}
+
+.header ul a{
+  transition: .5s ease;
+  position: relative;
+  padding: 3px 0;
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header ul a::after , 
+.header ul a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: red;
+}
+
+.header ul a::before {
+  bottom: 0;
+  left: 0;
+}
+
+.header ul a::after{
+  top: 0;
+  right: 0;
+}
+
+.header ul a:hover::before{
+  width: 100%;
+  transition: .5s ease;
+}
+
+.header ul a:hover::after{
+  width: 100%;
+  transition: .5s ease;
+}
+
+.header ul a:hover{
+  color: var(--main-color);
+}
+
+.humburger{
+  display: none;
+  z-index: 5;
+}
+
+@media(max-width:768px){
+  .nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0 0 0 /80%);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 3;
+    transition: .3s;
+  }
+
+  .nav.active{
+    left: 0;
+    z-index: 3;
+  }
+
+  .nav a{
+    font-size: 32px;
+    padding: 1rem 0;
+  }
+
+  .humburger{
+    display: initial;
+  }
+}
+
+@media(max-width:475px){
+  .container{
+    padding:0 5px;
+  }
+   .header{
+      padding: 0px 5px;
+   }
+  .header h2{
+    font-size: 22px;
+  }
+}
+
+.header h2{
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+}
+
+.footer{
+  color: #fff;
+  text-align: center;
+  padding-bottom:20px ;
+  font-size: 22px;
+  background-color: rgba(0 0 0 /60%);
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  padding-top: 10px;
+}
