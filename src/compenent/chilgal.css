@@ -1,0 +1,58 @@
+.product{
+    background-color: white;
+    height:400px;
+    width: 30%;
+    margin-bottom: 50px;
+    overflow: hidden;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.product .text{
+   padding: 20px;
+   position: relative;
+   height: 59%;
+}
+
+.product .text h3{
+    color: black;
+    font-size: 30px;
+}
+
+.product .text p{
+    font-size: 15px;
+    margin: 10px 0;
+    line-height: 1.7;
+    color: #777;
+    font-size: 22px;
+}
+
+.product .text span{
+    font-size: 22px;
+}
+
+.products .product img{
+    object-fit: cover;
+    width: 100%;
+    transition: .3s ease;
+}
+
+.products .product:hover img{
+    transform: scale(1.1,1.1) rotate(3deg);
+}
+
+.products .product:hover{
+    box-shadow: 0 0 10px white;
+}
+
+@media(max-width:991px){
+    .products .product{
+        width: 46%;
+    }
+}
+
+@media(max-width:768px){
+    .products .product{
+        width: 100%;
+    }
+}

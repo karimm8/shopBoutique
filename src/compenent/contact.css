@@ -1,0 +1,59 @@
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    margin-top: 120px;
+}
+
+.contact h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: white;
+    position: relative;
+}
+
+.contact h2::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 5%;
+    height: 3px;
+    background-color: red;
+}
+
+.contact .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    margin-top: 120px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.contact .content .text{
+    flex: 1;
+    margin-bottom: 40px;
+}
+
+.content .text .title{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.content span{
+    margin-left: 10px;
+}
+
+iframe{
+    max-width: 100%;
+}
