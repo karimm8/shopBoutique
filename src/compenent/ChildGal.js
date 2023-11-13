@@ -3,12 +3,19 @@ import './chilgal.css';
 export default function ChildGal({ele}) {
   return (
     <div className='product'>
-            <img src={require(`${ele.img}`)} alt='img' height={200}  />
+  {ele.map((m) => {
+  const {title,img,categorie,price} = m;
+  return (
+     <div className='art'>
+            <img src={require(`${img}`)} alt='img' height={200}  />
             <div className='text'>
-            <h3>{ele.title}</h3>
-            <p>{ele.categorie}</p>
-            <span>Prix : {ele.price}</span>
+            <h3>{title}</h3>
+            <p>{categorie}</p>
+            <span>Prix : {price}</span>
             </div>
+    </div>
+  );
+})}
     </div>
   )
 }
