@@ -10,9 +10,9 @@ function App() {
   const [click,setClick] = useState(false);
   const handClick = () => setClick(!click)
   return (
-    <div className="container">
+    <section className="container">
         <BrowserRouter>
-           <div className='header'>
+           <nav className='header'>
                 <Link style={{textDecoration:"none",zIndex:4}} to="/">
                   <h2 className='logo'>Karim shop boutique</h2>
                 </Link>
@@ -32,7 +32,7 @@ function App() {
                         click ? ( <FaTimes size={30} style={{color:"#fff"}} />) : (  <FaBars size={30} style={{color:"#fff"}} />)
                       }
                 </div>
-           </div>
+           </nav>
            <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/compenent/gallery' element={<Gallery />}/>
@@ -42,7 +42,7 @@ function App() {
         <div className="footer">
                 © Karimshop 2020
         </div>
-    </div>
+    </section>
   );
 }
 

@@ -4,7 +4,7 @@ import {BsFillGeoAltFill} from "react-icons/bs";
 import {BsFillTelephoneFill} from "react-icons/bs";
 export default function Contact() {
   return (
-    <div className='contact'>
+    <section className='contact'>
       <h2>Nous Contacter</h2>
       <div className='content'>
             <div className='text'>
@@ -24,6 +24,6 @@ export default function Contact() {
                   <iframe width="720" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Rabat%20Yacoub%20Al%20Mansour+(Karim%20Shop%20Boutique)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Calculate population in area</a></iframe>
             </div>
       </div>
-    </div>
+    </section>
   )
 }

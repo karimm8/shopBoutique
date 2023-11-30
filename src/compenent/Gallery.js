@@ -16,10 +16,10 @@ const filt = (categorie) => {
   setMenuItems(newItems)
 }
   return (
-    <div className='products'>
+    <section className='products'>
       <h2>Gallery</h2>
       <Categorie filt = {filt} />
       <ChildGal ele={e} />
-    </div>
+    </section>
   )
 }
