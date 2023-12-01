@@ -9,7 +9,7 @@
 
 .container{
   padding:0 35px;
-  background-image: url(./image/beau-marche-occasion.jpg);
+  background-image: url(./image/occasion.jpg);
   background-size: cover;
   filter: brightness(60%);
 }
